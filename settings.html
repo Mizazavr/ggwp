@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="/style/settings.css">
+    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Настройки</h1>
+        
+        <div class="setting-item" data-setting="message-mode">
+            <span class="setting-label">Режим отправки сообщений</span>
+            <div class="setting-value">
+                <span class="current-value">Голосовые и текстовые</span>
+                <span class="arrow">›</span>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-item">Только голосовые</div>
+                <div class="dropdown-item">Только текстовые</div>
+                <div class="dropdown-item">Голосовые и текстовые</div>
+            </div>
+        </div>
+
+        <div class="setting-item" data-setting="speech-speed">
+            <span class="setting-label">Скорость речи</span>
+            <div class="setting-value">
+                <span class="current-value">1.0X</span>
+                <span class="arrow">›</span>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-item">0.5X</div>
+                <div class="dropdown-item">1.0X</div>
+                <div class="dropdown-item">1.5X</div>
+                <div class="dropdown-item">2.0X</div>
+            </div>
+        </div>
+
+        <div class="setting-item" data-setting="language-level">
+            <span class="setting-label">Уровень языка</span>
+            <div class="setting-value">
+                <span class="current-value">Не выбрано</span>
+                <span class="arrow">›</span>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-item">Начальный</div>
+                <div class="dropdown-item">Средний</div>
+                <div class="dropdown-item">Продвинутый</div>
+            </div>
+        </div>
+
+        <div class="setting-item" data-setting="hints">
+            <span class="setting-label">Подсказки</span>
+            <div class="setting-value">
+                <span class="current-value">Включены</span>
+                <span class="arrow">›</span>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-item">Включены</div>
+                <div class="dropdown-item">Выключены</div>
+            </div>
+        </div>
+
+        <button class="reset-button">Сбросить настройки</button>
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="nav-item">
+            <a href="/static/achievements.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <path d="M12 3v18"/>
+                </svg>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="/static/index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 20V10"/>
+                    <path d="M12 20V4"/>
+                    <path d="M6 20v-6"/>
+                </svg>
+            </a>
+        </div>
+        <div class="nav-item active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+        </div>
+    </nav>
+
+    <script src="/js/scripts-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Interface</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="/static/image/student_avatar.png" alt="Profile picture" class="profile-pic">
+            <h1 class="username" id="user-name">Demo User</h1>
+            <div class="level">lvl 1 ⭐</div>
+            <div class="account-status">ACCOUNT STATUS FREE</div>
+        </div>
+
+        <div class="stats-card">
+            <div class="stats-item">💬 Talk Time:</div>
+            <div class="stats-item" data-stats="talk-today">- Today: 0.0 min.</div>
+            <div class="stats-item" data-stats="talk-weekly">- Weekly: 0.0 min.</div>
+            <div class="stats-item" data-stats="talk-total">- Total: 0.0 min.</div>
+            <div class="stats-item" data-stats="listened">🎯 Listened Time: 0 min. of English speech</div>
+            <div class="stats-item" data-stats="days">⏰ Total Days Engaged: 0 days</div>
+        </div>
+
+        <div class="gift-section">
+            <div>🎁 🎁 🎁 🎁 🎁 WOOOOOW 🎁 🎁 🎁 🎁 🎁</div>
+            <div style="margin: 10px 0;">Get Premium subscription for inviting 10 friends who reach level 5</div>
+            <div>👥 You have invited 0 friends</div>
+        </div>
+
+        <a href="#" class="invite-link" id="invite-link" target="_blank">Loading invite link...</a>
+        
+        <div style="text-align: center; color: #666; margin: 20px 0;">
+            Get a bonus for weekly training sessions of 5 minutes or more 😊
+        </div>
+
+        <button class="premium-button">
+            <a href="/static/payment.html" class="upgr-btn">One-time Premium</a>
+        </button>
+        <button class="premium-button">
+            <a href="/static/payment.html" class="upgr-btn">Monthly Premium</a>
+        </button>
+
+        
+            <nav class="bottom-nav">
+                <div class="nav-item ">
+                    <a href="/static/achievements.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <path d="M12 3v18"/>
+                        </svg>
+                    </a>
+
+                </div>
+                <div class="nav-item active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 20V10"/>
+                        <path d="M12 20V4"/>
+                        <path d="M6 20v-6"/>
+                    </svg>
+                </div>
+
+                <div class="nav-item">
+                    <a href="/static/settings.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

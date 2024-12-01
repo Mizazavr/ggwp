@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade to Speakadora Premium</title>
+    <link rel="stylesheet" href="/style/payments.css">
+    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+</head>
+<body>
+    <div class="container payment-container">
+        <a href="/static/index.html" class="close-btn">&times;</a>
+        <h1>Upgrade to Speakadora Premium</h1>
+        <div class="payment-options">
+            <div class="payment-option">
+                <h2>1 Month Premium</h2>
+                <p class="price">1170₽</p>
+            </div>
+            <div class="payment-option active">
+                <h2>Monthly Premium</h2>
+                <p class="price">890₽</p>
+                <p class="save">Save 15%</p>
+            </div>
+        </div>
+        <div class="premium-features">
+            <h3>Premium Benefits</h3>
+            <ul>
+                <li>Unlimited chat with Speakadora</li>
+                <li>Train pronunciation in special mode</li>
+                <li>Error correction</li>
+                <li>Unlimited feedback</li>
+            </ul>
+        </div>
+        <button class="upgrade-now-btn">Upgrade Now</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const telegramId = urlParams.get('telegram_id');
+            if (!telegramId) {
+                window.location.href = '/static/index.html';
+            }
+        });
+    </script>
+    <script src="/js/scripts-payments.js"></script>
+</body>
+</html>
